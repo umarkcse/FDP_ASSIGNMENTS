@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Assignment-1</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        .parent{
+            height: 100vh;
+                display: grid;
+                grid-template-rows: 10% 10% 80%;
+                grid-template-columns: 33% 33% 34%;
+                gap: 10px;
+                padding: 10px;
+        }
+        .header{
+            background-color: orangered;
+            grid-column: 1/4;
+                grid-row: 1/2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        }
+        .search{
+            background-color: green;
+            grid-column: 1/3;
+                grid-row: 2/3;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+        }
+        .leftsider{
+            background-color: lightblue;
+            grid-column: 1/1;
+                grid-row: 3/5;
+                display: flex;
+                justify-content: center;
+        }
+        .middlecolumn{
+            background-color: purple;
+            grid-column: 2/2;
+                grid-row: 3/5;
+                display: flex;
+                justify-content: center;
+        }
+        .rightsider{
+            background-color: lightcoral;
+            grid-column: /5;
+                grid-row: 2/5;
+                display: flex;
+                justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <!....PARENT...!>
+    <div class="parent">
+        <!-- GRID ITEM1 -->
+        <div class="header">Header
+        </div>
+        <!-- GRID ITEM2 -->
+        <div class="search">Search</div>
+        <!-- GRID ITEM3 -->
+        <div class="leftsider">Left Sider</div>
+        <!-- GRID ITEM4 -->
+        <div class="middlecolumn">Middle Column</div>
+        <!-- GRID ITEM5 -->
+        <div class="rightsider">Right Sider</div>
+    </div>   
+</body>
+</html>

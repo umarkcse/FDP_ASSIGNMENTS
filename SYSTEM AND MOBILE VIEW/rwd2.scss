@@ -1,0 +1,120 @@
+$mobile : 576px;
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+.container{
+    height: 100%;
+    &__header{
+        background-color: beige;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        &__logo{
+            margin-left: 10px;
+            &__brand{
+background-color: aliceblue;
+            }
+        }
+        &__menu{
+            margin-right: 10px;
+            display: flex;
+            gap: 2rem;
+        }
+    }
+    &__main{
+        display:flex;
+        height: 80vh;
+        background-color: blue;
+            align-items: center; 
+            width: 100vw;
+        &__image {
+            flex: 1;
+           &__img{
+            width:50%;
+            height:50%;
+           }
+            
+        }
+        &__desc{
+            flex: 1;
+            &__1{font-size: 4rem;}
+            &__2{font-size: 2rem;}
+            &__3{font-size: 2rem;}
+            &__4{font-size: 2rem;}
+            
+        }     
+    }
+    &__footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        &__icons{
+            background-color: antiquewhite;
+        }
+            }
+        
+    }
+@media(max-width:$mobile){
+    .container{
+        height: 100%;
+        &__header{
+            background-color: beige;
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            &__logo{
+                margin-left: 10px;
+                &__brand{
+    background-color: antiquewhite;
+                }
+            }
+            &__menu{
+                margin-right: 10px;
+                display: flex;
+                gap: 2rem;
+            }
+        }
+        &__main{
+            display:flex;
+            height: 80vh;
+            background-color: pink;
+                align-items: center; 
+                width: 100vw;
+                flex-direction: column;
+            &__image {
+                flex: 1;
+                // border: 1px solid red;
+                margin-top: 3px;
+                margin-left: 10px;
+                height: 300px;
+                width: 300px;
+                border-radius: 100%;
+               &_img{  
+                height: 300px;
+                width: 300px;
+                border-radius: 100%;
+               }
+            }
+            &__desc{
+                
+                flex: 1;
+                &__1{font-size: 4vw;}
+                [class^="container__main__desc"]:not(.container__main__desc__1){
+                    display: none;
+                }
+            }     
+        }
+        &__footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            &__icons{
+                background-color: antiquewhite;
+            }
+                }
+}
+}

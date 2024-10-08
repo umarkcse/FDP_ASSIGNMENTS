@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100%;
+}
+.container__header {
+  background-color: beige;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container__header__logo {
+  margin-left: 10px;
+}
+.container__header__logo__brand {
+  background-color: aliceblue;
+}
+.container__header__menu {
+  margin-right: 10px;
+  display: flex;
+  gap: 2rem;
+}
+.container__main {
+  display: flex;
+  height: 80vh;
+  background-color: blue;
+  align-items: center;
+  width: 100vw;
+}
+.container__main__image {
+  flex: 1;
+}
+.container__main__image__img {
+  width: 50%;
+  height: 50%;
+}
+.container__main__desc {
+  flex: 1;
+}
+.container__main__desc__1 {
+  font-size: 4rem;
+}
+.container__main__desc__2 {
+  font-size: 2rem;
+}
+.container__main__desc__3 {
+  font-size: 2rem;
+}
+.container__main__desc__4 {
+  font-size: 2rem;
+}
+.container__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container__footer__icons {
+  background-color: antiquewhite;
+}
+
+@media (max-width: 576px) {
+  .container {
+    height: 100%;
+  }
+  .container__header {
+    background-color: beige;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container__header__logo {
+    margin-left: 10px;
+  }
+  .container__header__logo__brand {
+    background-color: antiquewhite;
+  }
+  .container__header__menu {
+    margin-right: 10px;
+    display: flex;
+    gap: 2rem;
+  }
+  .container__main {
+    display: flex;
+    height: 80vh;
+    background-color: pink;
+    align-items: center;
+    width: 100vw;
+    flex-direction: column;
+  }
+  .container__main__image {
+    flex: 1;
+    margin-top: 3px;
+    margin-left: 10px;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+  }
+  .container__main__image_img {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+  }
+  .container__main__desc {
+    flex: 1;
+  }
+  .container__main__desc__1 {
+    font-size: 4vw;
+  }
+  .container__main__desc [class^=container__main__desc]:not(.container__main__desc__1) {
+    display: none;
+  }
+  .container__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container__footer__icons {
+    background-color: antiquewhite;
+  }
+}/*# sourceMappingURL=rwd2.css.map */

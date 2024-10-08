@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Assignment-1</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        .parent{
+            height: 100vh;
+                display: grid;
+                grid-template-rows: 10% 40% 40% 10%;
+                grid-template-columns: 10% 30% 50% 10%;
+                gap: 20px;
+                padding: 15px;
+        }
+        .header{
+            background-color: orangered;
+            grid-column: 1/5;
+                grid-row: 1/2;
+                color: white;
+        }
+        .smallbox1{
+            background-color: orangered;
+            grid-column: 1/2;
+            grid-row: 2/3;  
+            color: white;    
+        }
+        .smallbox2{
+            background-color: orangered;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            color: white;
+        }
+        .smallbox3{
+            background-color:orangered ;
+            grid-column: 3/3;
+            grid-row: 2/3;
+            color: white;
+        }
+        .sidebar{
+            background-color: orangered;
+            grid-column: 4/5;
+            grid-row: 2/4;
+            color: white;
+        }
+        .maincontent{
+            background-color: orangered;
+            grid-column: 1/4;
+            grid-row: 3/4;
+            color: white;
+        }
+        .footer{
+            background-color: orangered;
+            grid-column: 1/5;
+                grid-row: /5;
+                color: white;
+        }
+    </style>
+</head>
+<body>
+    <!....PARENT...!>
+    <div class="parent">
+        <!-- GRID ITEM1 -->
+        <div class="header">Header
+        </div>
+        <!-- GRID ITEM2 -->
+        <div class="smallbox1">Small Box</div>
+        <!-- GRID ITEM3 -->
+        <div class="smallbox2">Small Box</div>
+        <!-- GRID ITEM4 -->
+        <div class="smallbox3">Small Box</div>
+        <!-- GRID ITEM5 -->
+        <div class="sidebar">Sidebar</div>
+        <!-- GRID ITEM6 -->
+        <div class="maincontent">Main Content</div>
+        <!-- GRID ITEM7 -->
+        <div class="footer">Footer</div>
+    </div>   
+</body>
+</html>
